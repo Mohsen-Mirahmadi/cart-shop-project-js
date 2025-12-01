@@ -97,6 +97,7 @@ function generaiteBasketeProducte(userBasketArry){
 purchase.addEventListener('click' , function(){
     arryBasket = []
     generaiteBasketeProducte(arryBasket)
+    totalPrice(arryBasket)
 })
 function removeProducteFromBasket(producteId){
     let newProducte = arryBasket.filter(function(producte){
